@@ -24,5 +24,11 @@
 <p><a class="cta" id="go-fr" href="fr/" hreflang="fr" lang="fr">Continuer en français</a></p>
 <p><a class="cta" id="go-en" href="en/" hreflang="en" lang="en">Continue in English</a></p>
 </div></main>
+<script>
+(function(){var w=document.querySelector(".picker"),L=navigator.languages||[navigator.language||""];
+for(var i=0;i<L.length;i++){var c=String(L[i]).slice(0,2).toLowerCase(),a=document.getElementById("go-"+c);
+if(a){w.insertBefore(a.parentNode,w.querySelector("p"));break}}})();
+</script>
+
 </body>
 </html>
