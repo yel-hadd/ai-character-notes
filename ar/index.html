@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>إعلانات فيديو UGC جديدة كل أسبوع، دون تصوير | AI Character Notes</title>
-<meta name="description" content="حوّل صورة المنتج إلى فيديو إعلاني بأسلوب UGC لإعلانات Facebook وTikTok، بمقدّم افتراضي واحد. واجهة التطبيق بالعربية، والأسعار تقريبية بالدرهم.">
+<meta name="description" content="لمن يعرض إعلانات ممولة على Facebook وTikTok: حوّل صورة المنتج إلى فيديو إعلاني بأسلوب UGC بمقدّم افتراضي واحد. واجهة التطبيق بالعربية، والأسعار تقريبية بالدرهم.">
 <meta name="robots" content="noindex,follow">
 <meta name="cb-page-type" content="quiz">
 <link rel="canonical" href="https://yel-hadd.github.io/ai-character-notes/ar/">
@@ -15,12 +15,23 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="icon" href="../img/logo.png">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CWGD5E4DM8"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-XXXXXXXXXX', { send_page_view: true });
+gtag('config', 'G-CWGD5E4DM8', { send_page_view: true });
+</script>
+<script>
+(function (w, d, s, u) {
+  if (w.oaiq) return;
+  var q = function () { q.q.push(arguments); };
+  q.q = []; w.oaiq = q;
+  var js = d.createElement(s); js.async = true; js.src = u;
+  var f = d.getElementsByTagName(s)[0]; f.parentNode.insertBefore(js, f);
+})(window, document, "script", "https://bzrcdn.openai.com/sdk/oaiq.min.js");
+oaiq("init", { pixelId: "6YpAJ4Z1pMGcLR3px2oMv3" });
+oaiq("measure", "page_viewed", { type: "contents" });
 </script>
 </head>
 <body>
@@ -32,7 +43,7 @@ gtag('config', 'G-XXXXXXXXXX', { send_page_view: true });
 <div class="wrap">
 <section class="hero">
 <h1>إعلانات فيديو <bdi>UGC</bdi> جديدة كل أسبوع، دون تصوير</h1>
-<p class="lede">لبائعي الدفع عند الاستلام في المغرب والعالم العربي: صورة منتج واحدة، وإعلانا فيديو للاختبار.</p>
+<p class="lede">لبائعي الدفع عند الاستلام الذين يعرضون إعلانات ممولة على <bdi>Meta</bdi> أو <bdi>TikTok</bdi>، في المغرب والعالم العربي: صورة منتج واحدة، وإعلانا فيديو للاختبار.</p>
 <div class="vsl">
   <video id="vsl" crossorigin="anonymous" src="../video/vsl-ar.mp4" poster="../video/vsl-ar.jpg" muted autoplay playsinline preload="metadata" width="1280" height="720" aria-label="فيديو: إعلانات UGC كل أسبوع مع MakeInfluencer"><track kind="captions" src="../video/vsl-ar.vtt" srclang="ar" label="العربية" default></video>
   <button type="button" class="unmute" id="unmute"><span class="pill-sound"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>اضغط لتشغيل الصوت</span></button>
@@ -48,10 +59,11 @@ gtag('config', 'G-XXXXXXXXXX', { send_page_view: true });
     <button type="button" class="card" data-q="make" data-v="video" aria-pressed="false"><img src="../img/t-video.webp" alt="" width="480" height="360"><span>فيديوهات دون ظهور وجهي، أو أفلام قصيرة</span></button>
   </div>
   <div class="step2" id="step2" hidden>
-    <p class="q-label">كم مرة تحتاج إلى فيديوهات جديدة؟</p>
+    <p class="q-label">أين وصلت في الإعلانات الممولة؟</p>
     <div class="pills">
-      <button type="button" class="pill" data-q="freq" data-v="weekly" aria-pressed="false">كل أسبوع أو أكثر</button>
-      <button type="button" class="pill" data-q="freq" data-v="trying" aria-pressed="false">أريد التجربة أولاً</button>
+      <button type="button" class="pill" data-q="freq" data-v="weekly" aria-pressed="false">إعلاناتي تعمل، وأحتاج فيديوهات جديدة كل أسبوع</button>
+      <button type="button" class="pill" data-q="freq" data-v="trying" aria-pressed="false">إعلاناتي تعمل، وأريد تجربة الأداة أولاً</button>
+      <button type="button" class="pill" data-q="freq" data-v="noads" aria-pressed="false">لم أطلق إعلاناً ممولاً بعد</button>
     </div>
   </div>
   <div class="result" id="result" hidden aria-live="polite">
@@ -114,6 +126,7 @@ gtag('config', 'G-XXXXXXXXXX', { send_page_view: true });
 <details><summary>هل تناسب الأداة منتجات الدفع عند الاستلام (<bdi>COD</bdi>)؟</summary><p>نعم. ارفع صورة المنتج، فيحمله المقدّم ويتحدث عنه، بنسختين لاختبار الافتتاحيات.</p></details>
 <details><summary>هل سيبدو الإعلان مصطنعاً؟</summary><p>شاهد الأمثلة أعلاه واحكم بنفسك. تختار المقدّم والمكان والافتتاحية، وتحصل على نسختين في كل مرة، فتحتفظ بالأكثر إقناعاً.</p></details>
 <details><summary>هل يتكلم المقدّم بالدارجة أو باللهجة الخليجية أو المصرية؟</summary><p>نعم. اكتب النص واللهجة في الوصف، مثلاً «بالدارجة المغربية» أو «باللهجة السعودية»، أو ارفع تسجيلك الصوتي فيحرّك المقدّم شفتيه وفقه.</p></details>
+<details><summary>وإن لم تكن لدي إعلانات ممولة بعد؟</summary><p>فالأرجح أن الوقت غير مناسب. صُمّمت الأداة لإنتاج إعلانات جديدة بسرعة لحملات قيد الاختبار. أطلق منتجاً وحملتك الأولى، ثم عد حين تحتاج إلى فيديوهات كل أسبوع.</p></details>
 <details><summary>هل أملك الفيديوهات، وهل أستعملها في الإعلانات الممولة؟</summary><p>نعم. تقول <bdi>MakeInfluencer</bdi> إن ما تنتجه ملك لك، بحقوق تجارية كاملة ودون علامة مائية، على <bdi>Facebook</bdi> و<bdi>Instagram</bdi> و<bdi>TikTok</bdi> وغيرها.</p></details>
 <div class="final">
   <h2>إعلانك القادم لا ينتظر صانع محتوى</h2>
@@ -132,7 +145,7 @@ gtag('config', 'G-XXXXXXXXXX', { send_page_view: true });
 <script type="application/json" id="quiz-data">
 {"questions":[
  {"q":"ماذا تريد أن تصنع أولاً؟","options":["إعلانات فيديو لمتجري أو منتجي","منشورات وريلز لمؤثر افتراضي","فيديوهات دون ظهور وجهي، أو أفلام قصيرة"]},
- {"q":"كم مرة تحتاج إلى فيديوهات جديدة؟","options":["كل أسبوع أو أكثر","أريد التجربة أولاً"]}
+ {"q":"أين وصلت في الإعلانات الممولة؟","options":["إعلاناتي تعمل، وأحتاج فيديوهات جديدة كل أسبوع","إعلاناتي تعمل، وأريد تجربة الأداة أولاً","لم أطلق إعلاناً ممولاً بعد"]}
 ]}
 </script>
 <script>
@@ -140,6 +153,7 @@ window.FUNNEL = { lang: "ar", t: {
   title: { ugc: "الأنسب لك: أداة إعلانات UGC", persona: "الأنسب لك: أداة المؤثر الافتراضي", video: "الأنسب لك: أداة Movie Maker" },
   plan: {
     weekly: "تناسبك خطة Pro: 600,000 رصيد شهرياً لفيديوهات جديدة كل أسبوع، بدقة 1080p و4K، والوجه نفسه في كل فيديو. ابدأ بالدفع الشهري، وانتقل إلى السنوي بعد شهر من الاستعمال.",
+    noads: "بصراحة: تفيد الأداة أكثر حين تكون لديك إعلانات تعمل ومنتجات تختبرها، لأنك تحتاج حينها إلى فيديوهات جديدة كل أسبوع. يمكنك البدء بخطة Creator، لكن أطلق حملتك الأولى قبل ذلك.",
     trying: "ابدأ بخطة Creator: كل الأدوات، ومنها المقدّم الناطق، مع 180,000 رصيد شهرياً وفيديو بدقة 720p. انتقل إلى Pro حين تحتاج إلى حجم أكبر ودقة 1080p.",
     video: "أداة Movie Maker متاحة في كل الخطط: جملة واحدة، ثم لوحة مشاهد توافق عليها، ثم فيلم قصير بالشخصية نفسها. وتمنحك Pro أرصدة أكثر ودقة 1080p. صفحة Movie Maker متوفرة بالإنجليزية فقط."
   },

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pubs vidéo UGC sans tournage, prix en MAD | AI Character Notes</title>
-<meta name="description" content="Une photo produit suffit : votre présentateur IA en fait une pub vidéo UGC, en deux versions à tester. Appli en français, prix indiqués en dirhams.">
+<meta name="description" content="Pour les vendeurs qui font déjà tourner des pubs Meta ou TikTok : une photo produit, une pub vidéo UGC avec votre présentateur IA, en deux versions à tester. Appli en français.">
 <meta name="robots" content="noindex,follow">
 <meta name="cb-page-type" content="quiz">
 <link rel="canonical" href="https://yel-hadd.github.io/ai-character-notes/fr/">
@@ -15,12 +15,23 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="icon" href="../img/logo.png">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CWGD5E4DM8"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag("js", new Date());
-gtag("config", "G-XXXXXXXXXX", { send_page_view: true });
+gtag("config", "G-CWGD5E4DM8", { send_page_view: true });
+</script>
+<script>
+(function (w, d, s, u) {
+  if (w.oaiq) return;
+  var q = function () { q.q.push(arguments); };
+  q.q = []; w.oaiq = q;
+  var js = d.createElement(s); js.async = true; js.src = u;
+  var f = d.getElementsByTagName(s)[0]; f.parentNode.insertBefore(js, f);
+})(window, document, "script", "https://bzrcdn.openai.com/sdk/oaiq.min.js");
+oaiq("init", { pixelId: "6YpAJ4Z1pMGcLR3px2oMv3" });
+oaiq("measure", "page_viewed", { type: "contents" });
 </script>
 </head>
 <body>
@@ -32,7 +43,7 @@ gtag("config", "G-XXXXXXXXXX", { send_page_view: true });
 <div class="wrap">
 <section class="hero">
 <h1>Des pubs vidéo UGC chaque semaine, sans tournage</h1>
-<p class="lede">Vendeurs COD au Maroc et dans la région MENA : une photo produit, deux pubs vidéo à tester.</p>
+<p class="lede">Pour les vendeurs COD qui font déjà tourner des pubs Meta ou TikTok, au Maroc et dans la région MENA : une photo produit, deux pubs vidéo à tester.</p>
 <div class="vsl">
   <video id="vsl" crossorigin="anonymous" src="../video/vsl-fr.mp4" poster="../video/vsl-fr.jpg" muted autoplay playsinline preload="metadata" width="1280" height="720" aria-label="Vidéo : des pubs UGC chaque semaine avec MakeInfluencer"><track kind="captions" src="../video/vsl-fr.vtt" srclang="fr" label="Français" default></video>
   <button type="button" class="unmute" id="unmute"><span class="pill-sound"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>Cliquez pour activer le son</span></button>
@@ -50,8 +61,9 @@ gtag("config", "G-XXXXXXXXXX", { send_page_view: true });
   <div class="step2" id="step2" hidden>
     <p class="q-label">2/2 · Où en êtes-vous ?</p>
     <div class="pills">
-      <button type="button" class="pill" data-q="freq" data-v="weekly" aria-pressed="false">Je lance de nouvelles créas chaque semaine</button>
-      <button type="button" class="pill" data-q="freq" data-v="trying" aria-pressed="false">Je veux d'abord tester l'outil</button>
+      <button type="button" class="pill" data-q="freq" data-v="weekly" aria-pressed="false">Pubs actives, nouvelles créas chaque semaine</button>
+      <button type="button" class="pill" data-q="freq" data-v="trying" aria-pressed="false">Pubs actives, je veux d'abord tester l'outil</button>
+      <button type="button" class="pill" data-q="freq" data-v="noads" aria-pressed="false">Pas encore de pub payante</button>
     </div>
   </div>
   <div class="result" id="result" hidden aria-live="polite">
@@ -113,6 +125,7 @@ gtag("config", "G-XXXXXXXXXX", { send_page_view: true });
 <details><summary>Ça marche pour mes produits vendus en COD ?</summary><p>Oui. Une photo suffit pour que votre présentateur tienne le produit et en parle. Lancez la créa face à vos créas actuelles et gardez la gagnante.</p></details>
 <details><summary>Une pub IA, ça ne fait pas faux ?</summary><p>Regardez les exemples plus haut : ils sortent de l'outil. Pour un rendu naturel, écrivez comme on parle, faites court et utilisez votre propre voix. Chaque pub sort en deux versions : gardez la plus naturelle.</p></details>
 <details><summary>Une pub en darija, en khaliji ou en égyptien ?</summary><p>Oui. Écrivez le texte et le dialecte dans le prompt, par exemple « darija marocaine » ou « dialecte saoudien », ou importez votre propre voix : le présentateur synchronise ses lèvres dessus.</p></details>
+<details><summary>Et si je n'ai pas encore de pub qui tourne ?</summary><p>Alors ce n'est sans doute pas le bon moment. L'outil sert à produire vite de nouvelles créas pour des pubs déjà en test. Lancez d'abord un produit et une première campagne, puis revenez quand il vous faudra des vidéos chaque semaine.</p></details>
 <details><summary>Les vidéos m'appartiennent ? Il y a un filigrane ?</summary><p>Selon MakeInfluencer, ce que vous générez vous appartient, sans filigrane : vous pouvez l'utiliser dans vos pubs payantes et pour vos clients.</p></details>
 <div class="final">
   <h2>Votre prochaine créa, sans attendre un créateur</h2>
@@ -131,7 +144,7 @@ gtag("config", "G-XXXXXXXXXX", { send_page_view: true });
 <script type="application/json" id="quiz-data">
 {"questions":[
  {"q":"Que voulez-vous créer en premier ?","options":["Des pubs vidéo UGC pour mes produits","Des posts Insta/TikTok avec un personnage IA","Des vidéos sans visage ou des courts-métrages"]},
- {"q":"Où en êtes-vous ?","options":["Je lance de nouvelles créas chaque semaine","Je veux d'abord tester l'outil"]}
+ {"q":"Où en êtes-vous ?","options":["Pubs actives, nouvelles créas chaque semaine","Pubs actives, je veux d'abord tester l'outil","Pas encore de pub payante"]}
 ]}
 </script>
 <script>
@@ -139,6 +152,7 @@ window.FUNNEL = { lang: "fr", t: {
   title: { ugc: "Pour vous : l'outil de pubs UGC", persona: "Pour vous : le créateur de personnage IA", video: "Pour vous : Movie Maker" },
   plan: {
     weekly: "Prenez Pro : 600 000 crédits par mois pour sortir de nouvelles pubs chaque semaine, en 1080p et 4K, avec le même présentateur d'une pub à l'autre. Commencez au mois, passez à l'annuel une fois l'outil adopté.",
+    noads: "Franchement, l'outil sert surtout quand vous avez déjà des pubs qui tournent et des produits à tester : c'est là qu'il faut de nouvelles créas chaque semaine. Vous pouvez commencer avec Creator, mais lancez d'abord votre première campagne.",
     trying: "Commencez avec Creator : tous les outils, dont le présentateur qui parle, avec 180 000 crédits par mois et la vidéo en 720p. Passez à Pro quand vous voulez plus de volume et le 1080p.",
     video: "Movie Maker est inclus dans tous les plans : une phrase, un storyboard à valider, un court-métrage avec le même personnage. Pro donne plus de crédits et le 1080p. La page Movie Maker est en anglais, l'appli existe en français."
   },

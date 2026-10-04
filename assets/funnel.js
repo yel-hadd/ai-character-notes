@@ -12,12 +12,21 @@
   }
   window.aicnLink = link;
 
-  // One hook for every event: GA4 (gtag) + OpenAI pixel (oaiq) when present.
+  // One hook for every event: all go to GA4; the OpenAI pixel only gets the ones that matter for ads.
+  // outbound_click -> standard lead_created (the hand-off to the merchant is our "lead"; standard events can be optimisation goals),
+  // quiz_complete -> custom event. page_viewed is sent from the head snippet.
+  var OAI = { outbound_click: "lead_created", quiz_complete: "custom" };
   function track(name, props) {
     props = props || {};
     props.lang = F.lang;
     try { if (window.gtag) window.gtag("event", name, props); } catch (e) {}
-    try { if (window.oaiq) window.oaiq("track", name, props); } catch (e) {}
+    try {
+      var ev = OAI[name];
+      if (window.oaiq && ev) {
+        if (ev === "custom") window.oaiq("measure", "custom", { type: "custom" }, { custom_event_name: name });
+        else window.oaiq("measure", ev, { type: "customer_action" });
+      }
+    } catch (e) {}
   }
   window.aicnTrack = track;
 
