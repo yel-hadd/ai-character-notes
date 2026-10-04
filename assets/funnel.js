@@ -3,14 +3,12 @@
 (function () {
   var F = window.FUNNEL || {};
   var REF = "AIMARKETING";
-  var DEST = { ugc: "/ai-ugc-creator", persona: "/ai-influencer", video: "/ai-movie-maker" };
   var PREFIX = F.lang === "fr" ? "/fr" : F.lang === "ar" ? "/ar" : "";
   var state = { make: null, freq: null };
 
-  function link(make) {
-    // Only the affiliate ref: no UTM or campaign parameters on outbound links.
-    // /fr and /ar ai-movie-maker return 404: Movie Maker only exists without a locale prefix.
-    return "https://www.makeinfluencer.ai" + (make === "video" ? "" : PREFIX) + DEST[make] + "?ref=" + REF;
+  function link() {
+    // Every CTA goes to the homepage in the visitor's language, with only the affiliate ref (no UTMs).
+    return "https://www.makeinfluencer.ai" + (PREFIX || "/") + "?ref=" + REF;
   }
   window.aicnLink = link;
 
