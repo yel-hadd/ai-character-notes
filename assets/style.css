@@ -92,7 +92,7 @@ h3{font-size:17.5px;margin:0 0 4px;font-weight:700}
 .media figcaption{font-size:13px;color:var(--muted);margin-top:6px}
 .sheet{background:var(--panel);border-radius:16px;padding:10px;margin-top:16px}
 .frames{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.frames img{aspect-ratio:4/5;object-fit:cover;width:100%;border-radius:10px}
+.frames img{aspect-ratio:4/5;object-fit:cover;object-position:50% 25%;width:100%;height:auto;border-radius:10px}
 .sheet p{font-size:13px;color:var(--muted);margin:8px 2px 0}
 
 .steps{list-style:none;counter-reset:s;padding:0;margin:0;display:grid;gap:16px}
@@ -166,7 +166,7 @@ footer a{color:var(--muted)}
   .hero{padding-top:18px}
   h1{font-size:clamp(44px,4.4vw,60px);line-height:1.04;max-width:26ch;margin-inline:auto}
   [lang="ar"] h1{line-height:1.3}
-  .lede{font-size:20px;max-width:60ch}
+  .lede{font-size:20px;max-width:68ch}
   .vsl{border-radius:18px}
   .unmute .pill-sound{font-size:19px;padding:16px 26px}
   .quiz{padding:22px}
