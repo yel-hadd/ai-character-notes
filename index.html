@@ -19,15 +19,10 @@
 </head>
 <body>
 <main><div class="wrap picker">
-<h1>AI Character Notes</h1>
+<h1 class="sr-only">AI Character Notes</h1>
+<p><a class="cta" id="go-ar" href="ar/" hreflang="ar" lang="ar" dir="rtl" style="font-family:'IBM Plex Sans Arabic',sans-serif">المتابعة بالعربية</a></p>
 <p><a class="cta" id="go-fr" href="fr/" hreflang="fr" lang="fr">Continuer en français</a></p>
 <p><a class="cta" id="go-en" href="en/" hreflang="en" lang="en">Continue in English</a></p>
-<p><a class="cta" id="go-ar" href="ar/" hreflang="ar" lang="ar" dir="rtl" style="font-family:'IBM Plex Sans Arabic',sans-serif">المتابعة بالعربية</a></p>
 </div></main>
-<script>
-// No redirect: just put the visitor's browser language first.
-(function(){var l=(navigator.language||"fr").slice(0,2),el=document.getElementById("go-"+l);
-if(el&&l!=="fr"){var box=el.parentNode;box.parentNode.insertBefore(box,box.parentNode.children[1]);}})();
-</script>
 </body>
 </html>
