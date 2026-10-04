@@ -1,4 +1,4 @@
-/* AI Character Notes funnel: 2-step quiz -> matched MakeInfluencer page (same language), GA4 + OpenAI pixel events.
+/* UGC Lab funnel: 2-step quiz -> matched MakeInfluencer page (same language), GA4 + OpenAI pixel events.
    Each page defines window.FUNNEL = {lang, t:{title, plan, price, go}} before loading this file. */
 (function () {
   var F = window.FUNNEL || {};
